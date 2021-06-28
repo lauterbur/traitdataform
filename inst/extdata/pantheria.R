@@ -6,7 +6,7 @@ utils::unzip(temp, files = "PanTHERIA_1-0_WR05_Aug2008.txt", exdir = ".")
 unlink(temp)
 rm(temp)
 
-amniota <- utils::read.csv("PanTHERIA_1-0_WR05_Aug2008.txt",
+pantheria <- utils::read.delim("PanTHERIA_1-0_WR05_Aug2008.txt",
                            fileEncoding = "UTF-8",
                            stringsAsFactors = FALSE)
 file.remove("PanTHERIA_1-0_WR05_Aug2008.txt")
